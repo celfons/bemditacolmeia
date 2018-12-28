@@ -17,6 +17,8 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.min.css" rel="stylesheet">
@@ -47,6 +49,9 @@
           <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
         </li>
         <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#combo">Pacotes</a>
+        </li>
+        <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#contact">Contato</a>
         </li>
       </ul>
@@ -69,9 +74,8 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-10 mx-auto">
-            <h2>O melhor espaço para a cooperação entre empreendedoras!</h2>
-            <p class="lead mb-5">Faça parte de nossa iniciativa.</p>
-            <a class="btn btn-dark btn-xl js-scroll-trigger" target="_blank" href="https://api.whatsapp.com/send?phone=553491728334">Contato Whatsapp</a>
+            <h2>Sobre...</h2>
+            <p class="lead mb-5">Comunicação, Cooperação e muita interação...</p>
           </div>
         </div>
       </div>
@@ -121,7 +125,7 @@
             <h4>
               <strong>Filantropia</strong>
             </h4>
-            <p class="text-faded mb-0">Parte da renda é doada à mulheres!</p>
+            <p class="text-faded mb-0">Parte da renda revertida a instituições de apoio a mulheres!</p>
           </div>
         </div>
       </div>
@@ -140,7 +144,6 @@
               <span class="caption">
                 <span class="caption-content">
                   <h2>Empresa 01</h2>
-                  <p class="mb-0">Unus quisque mavult credere, quam judicare!</p>
                 </span>
               </span>
               <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
@@ -151,7 +154,6 @@
               <span class="caption">
                 <span class="caption-content">
                   <h2>Empresa 02</h2>
-                  <p class="mb-0">Unus quisque mavult credere, quam judicare!</p>
                 </span>
               </span>
               <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
@@ -162,7 +164,6 @@
               <span class="caption">
                 <span class="caption-content">
                   <h2>Empresa 03</h2>
-                  <p class="mb-0">Unus quisque mavult credere, quam judicare!</p>
                 </span>
               </span>
               <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
@@ -173,7 +174,6 @@
               <span class="caption">
                 <span class="caption-content">
                   <h2>Empresa 04</h2>
-                  <p class="mb-0">Unus quisque mavult credere, quam judicare!</p>
                 </span>
               </span>
               <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
@@ -190,7 +190,7 @@
 
           <!-- Modal Header -->
           <div class="modal-header">
-            <h4 class="modal-title">Empresas</h4>
+            <h4 class="modal-title">Nome da Empresa</h4>
             <button type="button" class="close" data-dismiss="modal">&times;</button>
           </div>
 
@@ -241,11 +241,12 @@
     </div>
 
     <!-- Call to Action -->
-    <section class="content-section bg-warning text-white">
+    <section class="content-section bg-warning text-white" id="combo">
       <div class="container text-center">
         <h2 class="mb-4">Pacotes Personalizados...</h2>
         <button class="btn btn-xl btn-light mr-4" data-toggle="modal" data-target="#favoDeMel">Favo de Mel</button>
-        <button href="#" class="btn btn-xl btn-dark" data-toggle="modal" data-target="#nectarRainha">Néctar da Rainha</button>
+        <button href="#" class="btn btn-xl btn-dark mr-4" data-toggle="modal" data-target="#nectarRainha">Néctar da Rainha</button>
+        <button class="btn btn-xl btn-light mr-4">Bendito Pólen</button>
       </div>
     </section>
 
@@ -305,14 +306,18 @@
       </div>
     </div>
 
-    <!-- Map -->
-    <section id="contact" class="map">
+    <!-- Map
+    <section class="map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3758.6956218102546!2d-46.94646078467213!3d-19.59753668679085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b0371c4bbb1cbb%3A0xdc7dbbbd90761024!2zUi4gU8OjbyBDcmlzdMOzdsOjbywgMjQ5IC0gU8OjbyBDcmlzdMOzdsOjbywgQXJheMOhIC0gTUcsIDM4MTg0LTA3NA!5e0!3m2!1spt-BR!2sbr!4v1545048117075" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen>
       </iframe>
+    </section>-->
+
+    <section  id="contact">
+          <div id="instafeed"></div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer text-center">
+    <footer class="footer text-center" id="contact">
       <div class="container">
         <ul class="list-inline mb-5">
           <li class="list-inline-item">
@@ -320,9 +325,14 @@
               <i class="icon-social-facebook"></i>
             </a>
           </li>
-          <li class="list-inline-item">''
+          <li class="list-inline-item">
             <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/stories/terramariana/" target="_blank" >
               <i class="icon-social-instagram"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="https://api.whatsapp.com/send?phone=553491728334" target="_blank" >
+              <i class="icon-phone"></i>
             </a>
           </li>
         </ul>
@@ -344,6 +354,34 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/stylish-portfolio.min.js"></script>
+
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <script type="text/javascript" src="js/instafeed.js"></script>
+
+    <script type="text/javascript">
+      var userFeed = new Instafeed({
+         get: 'user',
+         userId: '8987997106',
+         accessToken: '8987997106.924f677.8555ecbd52584f41b9b22ec1a16dafb9',
+         resolution: 'low_resolution',
+         template: '<div><a href="{{link}}"><img src="{{image}}" /></a></div>',
+         target: 'instafeed',
+         after: function () {
+              $('#instafeed').slick({
+                  dots: true,
+                  infinite: true,
+                  slidesToShow: 6,
+                  slidesToScroll: 1,
+                  autoplay: true,
+                  autoplaySpeed: 3000,
+                  arrows: true
+              });
+          }
+       });
+     userFeed.run();
+
+  </script>
 
   </body>
 
