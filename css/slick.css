@@ -121,13 +121,10 @@ video {
     position: fixed;
     top: 50%;
     left: 50%;
-    width: auto;
-    height: auto;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     z-index: -1;
     background-color: #cd9557;
-    opacity: .7;
 }
 
 .modal.modal-fullscreen .modal-content {
