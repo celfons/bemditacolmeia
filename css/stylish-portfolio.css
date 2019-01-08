@@ -42,7 +42,8 @@ h6 {
 }
 
 .text-faded {
-  color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
+    text-align: justify;
 }
 
 /* Map */
@@ -108,7 +109,16 @@ h6 {
 }
 
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 480px){
+.logo{
+  width:50%;
+ }
+ #instagram{
+     display:none;
+ }
+}
+
+@media only screen and (orientation:portrait) {
 .logo{
   width:50%;
  }
@@ -323,11 +333,7 @@ ul {
   margin: 0;
   padding: 1%;
   overflow: hidden;
-<<<<<<< Updated upstream
-  float: right;
-=======
   margin: 0 auto;
->>>>>>> Stashed changes
   font-size: 100%;
   width: 45%;
 }
@@ -385,8 +391,17 @@ li a:hover {
     display: block;
     text-align: center;
   }
+  .nav-item.dropdown {
+    display: none;
+  }
 }
 
+@media screen and (max-width: 784px) {
+    .nossa-colmeia {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+}
 .topnav {
     width: 45%;
     float: right;
@@ -424,4 +439,18 @@ li a:hover {
 
 .topnav .icon {
   display: none;
+}
+
+.custom-nav{
+    background-color:#3333333b;
+}
+
+/*dropdown*/
+
+.dropdown-menu.show {
+    display: block;
+    will-change: initial !important;
+    transform: initial !important;
+    left: 500px !important;
+    top: 64px !important;
 }
